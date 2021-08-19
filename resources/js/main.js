@@ -61,7 +61,7 @@ let registSchedule = (e) => {
    }
    
    localStorage.setItem('todo',JSON.stringify(todoList));
-   renderSchedule(todoList.slice(0,7));
+   renderSchedule(todoList.slice(0,8));
 }
 
 let renderSchedule = (todoList) => {
@@ -122,7 +122,7 @@ let renderPage = (renderPage, cnt) => {
    }
    
    if(todoList){
-      renderSchedule(JSON.parse(todoList).slice(0,7));
+      renderSchedule(JSON.parse(todoList).slice(0,8));
    }
    setInterval(renderCurrentTime,1000);
 })()
